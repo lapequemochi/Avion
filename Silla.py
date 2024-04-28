@@ -47,6 +47,7 @@ def __init__ ( self, pNumero, pClase, pUbicacion ):
     self.pasajero = None
 
 def asignarPasajero(self, pPasajero):
+    # Asigna la silla al pasajero "pPasajero"
     self.sillaDisponible
     self.sillasAsignadas
     self.pasajero = pPasajero
@@ -57,11 +58,13 @@ def asignarPasajero(self, pPasajero):
     elif self.sillasAsiganadas:
         return print('Error')
     
-def desasignarSilla (self ):
+def desasignarSilla (self):
+    # Quita al pasajero que se encuentra en la silla, dejándola desocupada. 
     self.pasajero = (TipoDeClase and TipoDeUbicaciones)
     return desasignarSilla
 
 def sillaAsignada (self, nuevoPasajero,cedulaPasajero):
+    # Informa si la silla está ocupada. 
     if self.sillaAsignada == nuevoPasajero:
         return nuevoPasajero
     elif not(cedulaPasajero):
@@ -72,3 +75,4 @@ def darNumero(self,sillasDesocupada,sillaOcupada):
         return sillaOcupada
     elif self.numero == sillasDesocupada:
         return sillasDesocupada
+    
