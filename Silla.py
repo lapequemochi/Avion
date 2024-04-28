@@ -26,10 +26,10 @@ def TipoDeUbicaciones(Enum):
     #-------------------------------------------
     # Atributos
     #-------------------------------------------
-    Nombre = ""
-    Apellido = ""
-    Edad = 0
-    Cedula = 0
+    
+    __Nombre = ""
+    __Cedula = 0
+    
     #-------------------------------------------
     # Metodos
     #-------------------------------------------
@@ -46,16 +46,14 @@ def __init__ ( self, pNumero, pClase, pUbicacion ):
     self.ubicacion = pUbicacion
     self.pasajero = None
 
-def asignarPasajero(self, pPasajero):
+def asignarPasajero(self, pPasajero, pasajero ,sillasAsignadas,sillaDisponible):
     # Asigna la silla al pasajero "pPasajero"
-    self.sillaDisponible
-    self.sillasAsignadas
-    self.pasajero = pPasajero
+    pasajero = pPasajero
     pPasajero == (self.nombre,self.cedula,self.TipoDeClase,self.TipoDeUbicacion)
-    if TipoDeClase and TipoDeUbicaciones == self.sillasDisponibles:
-        self.sillasDisponibles = pPasajero
+    if TipoDeClase and TipoDeUbicaciones == sillaDisponible:
+        sillaDisponible = pasajero
         return self.sillaDisponible  
-    elif self.sillasAsiganadas:
+    elif sillasAsignadas:
         return print('Error')
     
 def desasignarSilla (self):
