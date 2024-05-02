@@ -119,6 +119,10 @@ def darNumero(self,sillasDesocupada,sillaOcupada):
     
     def getNumero(self):
         return self.__numero
-    def
     
+    def getClase(self):
+        return self.__Clase
+    
+    def getPasajero(self):
+        return self.__pasajero    
         
