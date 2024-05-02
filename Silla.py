@@ -94,3 +94,31 @@ def darNumero(self,sillasDesocupada,sillaOcupada):
         self.clase = (self.CLASE.eje, self.CLASE.eco)[pClase]
         #Operador ternario forma 2
         self.clase = self.CLASE.eje if pClase =='Ejecutiva' else self.CLASE.eco
+        #ESTRATEGIA TRADICIONAL
+        if pUbicacion == 'ventana':
+            self.__Ubicacion = self.UBICACION.ventana
+        elif pUbicacion == 'centro':
+            self.__ubicacion = self.UBICACION.centro
+        elif pUbicacion == 'pasillo':
+            self.__ubicacion = self.UBICACION.pasillo
+        
+        else: 
+            self.__ubicacion = None
+            
+        self.__pasajero = None
+        
+    def asignarPasajero(self, pPasajero):
+        self.__pasajero=pPasajero
+    
+    def designarSilla(self):
+        self.__numero=None
+        return True if self.__numero == None else False
+    
+    def getNumero (self):
+        return self.__numero
+    
+    def getNumero(self):
+        return self.__numero
+    def
+    
+        
