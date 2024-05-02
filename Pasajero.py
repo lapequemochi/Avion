@@ -25,4 +25,12 @@ def darNombre( self  ):
     #Aqui va el codigo 
     return self.__Nombre 
 
-
+    #Otra manera 
+def getCedula(self):
+    return self.__Cedula
+def setCedula(self, pCedula):
+    self.__Cedula = pCedula
+def getNombre(self):
+    return self.__Nombre
+def setNombre(self, pNombre):
+    self.__Nombre = pNombre
