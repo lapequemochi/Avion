@@ -74,3 +74,23 @@ def darNumero(self,sillasDesocupada,sillaOcupada):
     elif self.numero == sillasDesocupada:
         return sillasDesocupada
     
+ #OTRA MANERA 
+ 
+    CLASE = {
+     'ventana':'Ventana',
+     'centro':'Centro',
+     'pasillo':'Pasillo'
+    }
+    
+    UBICACION = {
+        'ventana':'Ventana',
+        'centro':'Centro',
+        'pasillo':'Pasillo'
+    }
+    
+    def __init__(self, pNumero, pClase, pUbicacion):
+        self.numero = pNumero
+        #Operador ternario forma 1 - operador pClase debe ser true or false
+        self.clase = (self.CLASE.eje, self.CLASE.eco)[pClase]
+        #Operador ternario forma 2
+        self.clase = self.CLASE.eje if pClase =='Ejecutiva' else self.CLASE.eco
