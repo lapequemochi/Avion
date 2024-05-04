@@ -48,4 +48,28 @@ class Avion:
             not (sillaDisponible)
             return None
         
+    def asignarSillaEconomica (self, pUbicacion, pPasajero, sillaDisponible):
+        if self.sillasEconomicas == sillaDisponible:
+            sillaDisponible == pPasajero and pUbicacion
+            return True
+        else:
+            not sillaDisponible == pPasajero and pUbicacion
+            return False
+    
+    def anularReservaEjecutica(self, pCedula, pPasajero):
+        if self.sillasEjecutivas == pPasajero and pCedula:
+            return True
+        
+    def contarVentanasEconomicas(self):
+        for i in range(self.SILLAS_ECONOMICAS):
+            if self.sillasEconomicas == self.TipoDeUbicacion:
+                self.TipoDeUbicacion == self.ventana
+                self.ventana = +1
+            return self.ventana
+    
+    def hayDosHomonimosEcocnomica(self, pPasajeros, pCedulas, nombresIguales, patronDeDoble):
+        if self.sillasEconomicas == pPasajeros:
+            pPasajeros(pCedulas) == nombresIguales
+            nombresIguales = patronDeDoble
+            return patronDeDoble
     
