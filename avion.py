@@ -73,3 +73,12 @@ class Avion:
             nombresIguales = patronDeDoble
             return patronDeDoble
     
+        #Metodo 2
+        
+    def hayDosHomonimosEcocnomica(self, nombresIguales):
+        nombres =[silla.pasajero.nombre for silla in self.sillasEconomicas]
+        for nombre in nombresIguales:
+            if nombres.count(nombre)>1:
+                return True
+            return False
+    
