@@ -28,5 +28,24 @@ class Avion:
             else:
                 self.sillasEjecutivas.append(i + 1)(3, Silla.CLASE.eco, Silla.UBICACION.centro)
                 
+    def contarSillasEjecutivasOcupadas(self, sillaOcupada):
+        for i in range (self.SILLAS_EJECUTIVAS):
+            if self.sillasEjecutivas == sillaOcupada:
+                sillaOcupada = +1
+            return sillaOcupada
+            
+    def buscarPasajeroEjecutivo(self, pCedula, sillaPasajero):
+       if sillaPasajero == pCedula:
+           return sillaPasajero
+       else:
+           not (self.sillasEjecutivas(sillaPasajero(pCedula)))
+           return None
+       
+    def buscarSillaEconomicaLibre(self, publicacion, sillaDisponible):
+        if self.sillasEconomicas(self.TipoDeUbicaciones) == sillaDisponible:
+            return publicacion
+        else:
+            not (sillaDisponible)
+            return None
+        
     
-      
