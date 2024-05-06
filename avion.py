@@ -74,11 +74,37 @@ class Avion:
             return patronDeDoble
     
         #Metodo 2
+        # def hayDosHomonimosEcocnomica(self, nombresIguales):
+        #     nombres =[silla.pasajero.nombre for silla in self.sillasEconomicas]
+        #     for nombre in nombresIguales:
+        #         if nombres.count(nombre)>1:
+        #             return True
+        #         return False
+    
+    def contarSillasEconomicasLibres(self):
+        contarLibres = 0
+        for silla in self.__silla:
+            if silla.clase== "Economica" and not silla.ocupada:
+                contadorLibres +=1
+            return contarLibres
         
-    def hayDosHomonimosEcocnomica(self, nombresIguales):
-        nombres =[silla.pasajero.nombre for silla in self.sillasEconomicas]
-        for nombre in nombresIguales:
-            if nombres.count(nombre)>1:
-                return True
-            return False
+    def contadorPasilloEjecutivo(self):
+        contadorPasillosEjecutivos = 0
+        for silla in self.__sillas:
+            if silla.clase == "Ejecutivo" and silla.ubicacion == "Pasillo" and not silla.ocupada:
+                contadorPasillosEjecutivos += 1
+            return contadorPasillosEjecutivos
+        
+    def desocupar(self):
+        self.ocupada = False
+        
+    def desocuparAvion(self):
+        for silla in self.__sillas:
+            silla.desocupar()        
+            
+        
+        
+        
+        
+        
     
